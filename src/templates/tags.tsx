@@ -73,14 +73,14 @@ const Tags: React.FC<TagTemplateProps> = props => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={`${tag} - ${config.title}`} />
         <meta property="og:url" content={config.siteUrl + props.pathContext.slug} />
-        {config.facebook && <meta property="article:publisher" content={config.facebook} />}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${tag} - ${config.title}`} />
-        <meta name="twitter:url" content={config.siteUrl + props.pathContext.slug} />
-        {config.twitter && (
+        {config.github && <meta property="article:publisher" content={config.github} />}
+        <meta name="instagram:card" content="summary_large_image" />
+        <meta name="instagram:title" content={`${tag} - ${config.title}`} />
+        <meta name="instagram:url" content={config.siteUrl + props.pathContext.slug} />
+        {config.instagram && (
           <meta
-            name="twitter:site"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
+            name="instagram:site"
+            content={`@${config.instagram.split('https://instagram.com/')[1]}`}
           />
         )}
       </Helmet>

@@ -15,7 +15,7 @@ export interface WebsiteConfig {
   /**
    * full url, no username
    */
-  facebook?: string;
+  github?: string;
   /**
    * full url, no username
    */
@@ -49,16 +49,16 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'youjinjung',
-  description: 'Welcome to my blog!',
-  coverImage: 'img/blog-cover.jpg',
+  title: 'youjin jung',
+  description: 'Hi, welcome to my blog!',
+  coverImage: 'img/toystory_cover2.jpg',
   logo: 'img/ghost-logo.png',
   lang: 'en',
   siteUrl: 'https://jung-youjin.com',
-  facebook: 'https://www.facebook.com/jungyoujin0527',
+  github: 'https://github.com/jung-youjin',
   instagram: 'https://instagram.com/_jungyoujin',
   googleSiteVerification: 'GoogleCode',
-  footer: '© 2020 YouJin Jung. All rights reserved - Gatsby Template by scttcper / gatsby-casper',
+  footer: 'All rights reserved - Gatsby Template by scttcper / gatsby-casper',
 };
 
 export default config;

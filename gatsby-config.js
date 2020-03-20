@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'youjinjung',
-    description: 'YouJin Jung's Blog',
+    description: 'youjinjung blog',
     siteUrl: 'https://jung-youjin.com', // full path to blog - no ending slash
   },
   mapping: {

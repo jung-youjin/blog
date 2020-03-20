@@ -21,11 +21,12 @@ import {
   SocialLink,
 } from '../styles/shared';
 import { PageContext } from './post';
-import Facebook from '../components/icons/facebook';
+import Github from '../components/icons/github';
 import Helmet from 'react-helmet';
 import config from '../website-config';
 import Website from '../components/icons/website';
-import Twitter from '../components/icons/twitter';
+import Instagram from '../components/icons/instagram';
+
 
 const HiddenMobile = css`
   @media (max-width: 500px) {
@@ -93,8 +94,8 @@ interface AuthorTemplateProps {
     authorYaml: {
       id: string;
       website?: string;
-      twitter?: string;
-      facebook?: string;
+      instagram?: string;
+      github?: string;
       location?: string;
       // eslint-disable-next-line @typescript-eslint/camelcase
       profile_image?: {
@@ -136,21 +137,21 @@ const Author: React.FC<AuthorTemplateProps> = props => {
         <meta property="og:type" content="profile" />
         <meta property="og:title" content={`${author.id} - ${config.title}`} />
         <meta property="og:url" content={config.siteUrl + props.pathContext.slug} />
-        <meta property="article:publisher" content="https://www.facebook.com/ghost" />
-        <meta property="article:author" content="https://www.facebook.com/ghost" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content={`${author.id} - ${config.title}`} />
-        <meta name="twitter:url" content={config.siteUrl + props.pathContext.slug} />
-        {config.twitter && (
+        <meta property="article:publisher" content="https://www.github.com/ghost" />
+        <meta property="article:author" content="https://www.github.com/ghost" />
+        <meta name="instagram:card" content="summary" />
+        <meta name="instagram:title" content={`${author.id} - ${config.title}`} />
+        <meta name="instagram:url" content={config.siteUrl + props.pathContext.slug} />
+        {config.instagram && (
           <meta
-            name="twitter:site"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
+            name="instagram:site"
+            content={`@${config.instagram.split('https://instagram.com/')[1]}`}
           />
         )}
-        {config.twitter && (
+        {config.instagram && (
           <meta
-            name="twitter:creator"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
+            name="instagram:creator"
+            content={`@${config.instagram.split('https://instagram.com/')[1]}`}
           />
         )}
       </Helmet>
@@ -200,28 +201,28 @@ const Author: React.FC<AuthorTemplateProps> = props => {
                     </a>
                   </div>
                 )}
-                {author.twitter && (
+                {author.instagram && (
                   <a
                     className="social-link-tw"
                     css={SocialLink}
-                    href={`https://twitter.com/${author.twitter}`}
-                    title="Twitter"
+                    href={`https://instagram.com/${author.instagram}`}
+                    title="Instagram"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Twitter />
+                    <Instagram />
                   </a>
                 )}
-                {author.facebook && (
+                {author.github && (
                   <a
                     className="social-link-fb"
                     css={SocialLink}
-                    href={`https://www.facebook.com/${author.facebook}`}
-                    title="Facebook"
+                    href={`https://www.github.com/${author.github}`}
+                    title="Github"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Facebook />
+                    <Github />
                   </a>
                 )}
                 {/* TODO: RSS for author */}
@@ -266,9 +267,9 @@ export const pageQuery = graphql`
     authorYaml(id: { eq: $author }) {
       id
       website
-      twitter
+      instagram
       bio
-      facebook
+      github
       location
       profile_image {
         childImageSharp {
