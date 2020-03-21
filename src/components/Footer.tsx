@@ -33,7 +33,7 @@ const SiteFooterContent = css`
   @media (max-width: 650px) {
     flex-direction: column;
   }
-  background-image: url('./content/img/toystory_cover2.jpg');
+  background-image: url('./content/img/cherryblossom1.jpg');
 `;
 
 const SiteFooterNav = styled.nav`

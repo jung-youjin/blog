@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Using The Ghost Editor"
+title: "유진's 블로그 오픈!"
 author: Ghost
 tags: ["Getting Started"]
 image: img/writing.jpg
-date: "2015-02-02T23:46:37.121Z"
+date: "2020-03-20T23:46:37.121Z"
 draft: false
 ---
 

@@ -1,12 +1,12 @@
+- id: youjin
+  avatar: avatars/favi_logo.png
+  bio: Undergrad student studying electronic and electrical engineering with cs focus
+  instagram: _jungyoujin
+  github: jung-youjin
+  website: https://jung-youjin.com
+  location: On B787-1000
 - id: Ghost
-  avatar: avatars/ghost.png
-  bio: The professional publishing platform
-  instagram: TryGhost
-  github: ghost
-  website: https://ghost.org/
-  location: On a plane
-- id: Another Author
-  avatar: avatars/ghost.png
+  avatar: avatars/favi_logo.png
   bio: This is another test author with a profile background image
   instagram: TryGhost
   github: ghost

@@ -180,7 +180,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
-    logo: file(relativePath: { eq: "img/main_logo.png" }) {
+    logo: file(relativePath: { eq: "img/youjin_logo2.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
@@ -189,7 +189,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    header: file(relativePath: { eq: "img/toystory_cover2.jpg" }) {
+    header: file(relativePath: { eq: "img/cherryblossom1.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
