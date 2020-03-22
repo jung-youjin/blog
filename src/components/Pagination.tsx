@@ -19,7 +19,7 @@ const navCss = css`
   a {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
     background: #fff;
-    color: black;
+    color: #ffb2b2;
     float: left;
     padding: 8px 16px;
     text-decoration: none;

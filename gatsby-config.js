@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'youjinjung',
     description: 'youjinjung blog',
-    siteUrl: 'https://jung-youjin.com', // full path to blog - no ending slash
+    siteUrl: 'https://youjinjung.me', // full path to blog - no ending slash
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
@@ -65,7 +65,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'x',
+        trackingId: 'UA-161068867-1',
         // Puts tracking script in the head instead of the body
         head: true,
         // IP anonymization for GDPR compliance

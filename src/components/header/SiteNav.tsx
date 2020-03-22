@@ -88,9 +88,7 @@ const SiteNavRight = styled.div`
   height: 40px;
 
 
-  @media (max-width: 700px) {
-    display: none;
-  }
+
 `;
 
 const SocialLinks = styled.div`

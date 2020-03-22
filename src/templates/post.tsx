@@ -22,10 +22,12 @@ import { colors } from '../styles/colors';
 import { inner, outer, SiteHeader, SiteMain } from '../styles/shared';
 import config from '../website-config';
 
+
 const PostTemplate = css`
   .site-main {
     background: #fff;
     padding-bottom: 4vw;
+    font-family: Georgia;
   }
 `;
 
@@ -51,6 +53,7 @@ export const PostFullHeader = styled.header`
   max-width: 1040px;
   text-align: center;
 
+
   @media (max-width: 500px) {
     padding: 14vw 3vw 10vw;
   }
@@ -64,6 +67,7 @@ const PostFullMeta = styled.section`
   font-size: 1.4rem;
   font-weight: 600;
   text-transform: uppercase;
+
 
   @media (max-width: 500px) {
     font-size: 1.2rem;

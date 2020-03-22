@@ -54,7 +54,7 @@ const config: WebsiteConfig = {
   coverImage: 'img/cherryblossom1.jpg',
   logo: 'img/youjin_logo.png',
   lang: 'en',
-  siteUrl: 'https://jung-youjin.com',
+  siteUrl: 'https://youjinjung.me',
   github: 'https://github.com/jung-youjin',
   instagram: 'https://instagram.com/_jungyoujin',
   googleSiteVerification: 'GoogleCode',
