@@ -16,6 +16,7 @@ const HomeNavRaise = css`
     position: relative;
     top: -70px;
   }
+
 `;
 
 const SiteNavStyles = css`
@@ -27,6 +28,8 @@ const SiteNavStyles = css`
   overflow-y: hidden;
   height: 40px;
   font-size: 1.2rem;
+
+
 `;
 
 const SiteNavLeft = styled.div`
@@ -39,6 +42,7 @@ const SiteNavLeft = styled.div`
   padding-bottom: 80px;
   letter-spacing: 0.4px;
   white-space: nowrap;
+
 
   -ms-overflow-scrolling: touch;
 
@@ -54,6 +58,7 @@ const NavStyles = css`
   padding: 0;
   list-style: none;
 
+
   li {
     display: block;
     margin: 0;
@@ -66,11 +71,12 @@ const NavStyles = css`
     margin: 0;
     padding: 10px 12px;
     color: #fff;
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   li a:hover {
     text-decoration: none;
+    font-weight: bold;
     opacity: 1;
   }
 `;
@@ -81,6 +87,7 @@ const SiteNavRight = styled.div`
   align-items: center;
   height: 40px;
 
+
   @media (max-width: 700px) {
     display: none;
   }
@@ -90,6 +97,7 @@ const SocialLinks = styled.div`
   flex-shrink: 0;
   display: flex;
   align-items: center;
+
   a:last-of-type {
     padding-right: 20px;
   }
@@ -103,12 +111,13 @@ const SubscribeButton = styled.a`
   font-size: 1.2rem;
   line-height: 1em;
   border-radius: 10px;
-  opacity: 0.8;
+  opacity: 0.9;
 
   :hover {
     text-decoration: none;
     opacity: 1;
     cursor: pointer;
+    font-weight: bold;
   }
 `;
 

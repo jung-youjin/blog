@@ -50,9 +50,9 @@ export interface WebsiteConfig {
 
 const config: WebsiteConfig = {
   title: 'youjin jung',
-  description: 'Hi, welcome to my blog!',
+  description: ' ',
   coverImage: 'img/cherryblossom1.jpg',
-  logo: 'img/ghost-logo.png',
+  logo: 'img/youjin_logo.png',
   lang: 'en',
   siteUrl: 'https://jung-youjin.com',
   github: 'https://github.com/jung-youjin',

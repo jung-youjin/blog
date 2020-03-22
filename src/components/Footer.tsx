@@ -12,8 +12,8 @@ const SiteFooter = css`
   position: relative;
   padding-top: 20px;
   padding-bottom: 60px;
-  color: #fff;
-  background: ${setLightness('0.0015', colors.darkgrey)};
+  color: #ffb2b2;
+  background: #91AFE1;
 `;
 
 const SiteFooterContent = css`

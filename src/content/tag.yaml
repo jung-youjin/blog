@@ -1,3 +1,15 @@
 - id: speeches
   description: Some of the greatest words ever spoken.
   image: img/speeches-cover.jpg
+- id: blog
+  description: This is my blog section.
+  image: img/cherryblossom1.jpg
+- id: test
+  description: Test tag.
+  image: img/computer.jpg
+- id: source
+  description: Source tag page.
+  image: img/demo1.jpg
+- id: Getting Started
+  description: Source tag page.
+  image: img/demo1.jpg

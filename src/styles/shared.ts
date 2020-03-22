@@ -80,6 +80,7 @@ export const SiteHeader = css`
   /* background: color(var(--darkgrey) l(-5%)) no-repeat center center; */
   background: ${darken('0.05', colors.darkgrey)} no-repeat center center;
   background-size: cover;
+  background-color: #91AFE1;
 `;
 
 export const SiteHeaderContent = styled.div`

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "유진's 블로그 오픈!"
+title: "Welcome"
 author: youjin
 tags: ["Blog"]
 image: img/welcome-to-ghost.jpg

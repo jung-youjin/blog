@@ -10,4 +10,6 @@ export const colors = {
   whitegrey: '#e5eff5',
   pink: '#fa3a57',
   brown: '#a3821a',
+  babypink: '#ffb2b2',
+  skyblue: '#91AFE1',
 };

@@ -14,13 +14,26 @@ const PageTemplate = css`
   .site-main {
     background: #fff;
     padding-bottom: 4vw;
+    font-family: Consolas;
+  }
+  h3, p {
+    font-family: Consolas;
+  }
+
+`;
+
+const About_title = css`
+  title {
+    font-family: Consolas;
   }
 `;
+
+
 
 const About: React.FC = () => (
   <IndexLayout>
     <Helmet>
-      <title>About</title>
+      <title css={About_title}>About</title>
     </Helmet>
     <Wrapper css={PageTemplate}>
       <header css={[outer, SiteHeader]}>
@@ -37,7 +50,7 @@ const About: React.FC = () => (
           <PostFullContent className="post-full-content">
             <div className="post-content">
               <h3> youjin's blog - since 2020.03.20 ~ing </h3>
-              <p> Welcome to my blog! Further contents to be updated...! Stay tuned! </p>
+              <small><p> Welcome to my blog! Further contents to be updated...! Stay tuned! </p></small>
             </div>
           </PostFullContent>
         </article>
