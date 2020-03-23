@@ -23,7 +23,7 @@ export const SiteMain = css`
 export const SiteTitle = styled.h1`
   z-index: 10;
   margin: 0;
-  padding: 0;
+  padding-top: 10vw;
   font-size: 3.8rem;
   font-weight: 700;
 `;
@@ -32,10 +32,16 @@ export const SiteDescription = styled.h2`
   z-index: 10;
   margin: 0;
   padding: 5px 0;
-  font-size: 2.2rem;
-  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 5px;
+  margin-top: 15px;
+
+  font-size: 1.5rem;
+  font-weight: 500;
   letter-spacing: 0.5px;
-  opacity: 0.8;
+  opacity: 1;
+  font-family: Consolas;
+  background-color: #ffb2b2;
 `;
 
 export const PostFeed = css`

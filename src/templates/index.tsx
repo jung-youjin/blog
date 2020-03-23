@@ -11,6 +11,9 @@ import IndexLayout from '../layouts';
 import config from '../website-config';
 import Pagination from '../components/Pagination';
 
+import Typical from 'react-typical'
+
+
 import {
   inner,
   outer,
@@ -29,6 +32,10 @@ const HomePosts = css`
     .post-card:nth-of-type(6n + 1):not(.no-image) {
       flex: 1 1 100%;
       flex-direction: row;
+    }
+
+    .Typical {
+      font-size: 0.8rem;
     }
 
     .post-card:nth-of-type(6n + 1):not(.no-image) .post-card-image-link {
@@ -140,7 +147,7 @@ const IndexPage: React.FC<IndexProps> = props => {
               <SiteTitle>
                 {props.data.logo ? (
                   <img
-                    style={{ maxHeight: '45px' }}
+                    style={{ maxHeight: '60px' }}
                     src={props.data.logo.childImageSharp.fixed.src}
                     alt={config.title}
                   />
@@ -148,7 +155,26 @@ const IndexPage: React.FC<IndexProps> = props => {
                   config.title
                 )}
               </SiteTitle>
-              <SiteDescription>{config.description}</SiteDescription>
+
+              <SiteDescription>
+                <Typical
+                  steps={[
+                    ' Hi there! 👋', 1100,
+                    ' Welcome to my blog! 😚', 1500,
+                    ' I am YouJin 🙋', 1100,
+                    ' I am an engineer 🔧🔌', 1200,
+                    ' I am a designer 👑', 1000,
+                    ' I am a developer 💻', 1000,
+                    ' I am a blogger ✒️', 8500,
+                    ' I am a photographer 📷', 850,
+                    ' I am an aircraft-lover ✈️', 900,
+                    ' I am a coffee-lover ☕️', 900,
+                    ' I am a music-lover 🎧', 900,
+                  ]}
+                  loop={Infinity}
+                  wrapper="Typical"
+                />
+              </SiteDescription>
             </SiteHeaderContent>
             <SiteNav isHome />
           </div>
