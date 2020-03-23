@@ -24,11 +24,12 @@ const SiteFooterContent = css`
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.3rem;
   a {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.85);
   }
   a:hover {
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
+    font-weight: bold;
   }
   @media (max-width: 650px) {
     flex-direction: column;
@@ -72,10 +73,10 @@ const Footer: React.FC = () => {
       <div css={[inner, SiteFooterContent]}>
         <section className="copyright">
           <Link to="/">{config.title}</Link> &copy; {new Date().getFullYear()}{' '}
-          {config.footer && (
-            <Link to="/">
+          {(
+            <a href={config.source}>
               | {config.footer}
-            </Link>
+            </a>
           )}
         </section>
         <SiteFooterNav>

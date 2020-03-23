@@ -27,7 +27,7 @@ const SiteNavStyles = css`
   align-items: flex-start;
   overflow-y: hidden;
   height: 40px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 
 
 `;
@@ -87,14 +87,13 @@ const SiteNavRight = styled.div`
   align-items: center;
   height: 40px;
 
-
-
 `;
 
 const SocialLinks = styled.div`
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  font-size: 1.5rem;
 
   a:last-of-type {
     padding-right: 20px;
@@ -116,6 +115,7 @@ const SubscribeButton = styled.a`
     opacity: 1;
     cursor: pointer;
     font-weight: bold;
+    height: 3.5rem;
   }
 `;
 

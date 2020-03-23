@@ -59,6 +59,7 @@ const config: WebsiteConfig = {
   instagram: 'https://instagram.com/_jungyoujin',
   googleSiteVerification: 'GoogleCode',
   footer: 'All rights reserved - Gatsby Template by scttcper / gatsby-casper',
+  source: 'https://github.com/jung-youjin/blog',
 };
 
 export default config;

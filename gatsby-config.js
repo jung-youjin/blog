@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'youjinjung',
+    title: 'youjin jung',
     description: 'youjinjung blog',
     siteUrl: 'https://youjinjung.me', // full path to blog - no ending slash
   },
@@ -47,7 +47,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gatsby-casper.netlify.com',
+        siteUrl: 'https://youjinjung.me',
       },
     },
     'gatsby-plugin-emotion',
