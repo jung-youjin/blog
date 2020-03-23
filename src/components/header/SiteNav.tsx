@@ -8,6 +8,7 @@ import { SocialLink } from '../../styles/shared';
 import config from '../../website-config';
 import Github from '../icons/github';
 import Instagram from '../icons/instagram';
+import Email from '../icons/email';
 import SubscribeModal from '../subscribe/SubscribeOverlay';
 import SiteNavLogo from './SiteNavLogo';
 
@@ -28,7 +29,6 @@ const SiteNavStyles = css`
   overflow-y: hidden;
   height: 40px;
   font-size: 1.3rem;
-
 
 `;
 
@@ -57,7 +57,7 @@ const NavStyles = css`
   margin: 0 0 0 -12px;
   padding: 0;
   list-style: none;
-
+  background-image: url("../content/img/flower_blog.jpg");
 
   li {
     display: block;
@@ -86,6 +86,10 @@ const SiteNavRight = styled.div`
   display: flex;
   align-items: center;
   height: 40px;
+
+  @media (max-width: 550px) {
+    display: none;
+  }
 
 `;
 
@@ -173,6 +177,17 @@ class SiteNav extends React.Component<SiteNavProps> {
                 rel="noopener noreferrer"
               >
                 <Instagram />
+              </a>
+            )}
+            {config.email && (
+              <a
+                css={SocialLink}
+                href={"mailto:" + config.email}
+                title="Email"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Email />
               </a>
             )}
           </SocialLinks>

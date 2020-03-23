@@ -1,6 +1,8 @@
-# These rules will change if you change your site’s custom domains or HTTPS settings
+# redirect netlify sitename to your sitename for SEO purposes,
+# to avoid duplicate content.  Do this for http and https
+https://youjinjung.netlify.com/* https://www.youjinjung.me/:splat 301!
+http://youjinjung.netlify.com/* http://www.youjinjung.me/:splat 301!
 
-# Redirect default Netlify subdomain to primary domain
-https://youjinjung.netlify.com/* https://youjinjung.me/:splat 301!
-
-/* /index.html 200
+# also redirect http to https for your custom domain.
+# Note that netlify automatically redirects to your custom domain from the bare domain (or vice versa), so you only need one rule here.
+http://www.youjinjung.com/* https://www.youjinjung.me/:splat 301!

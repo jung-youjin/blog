@@ -60,6 +60,7 @@ const config: WebsiteConfig = {
   googleSiteVerification: 'GoogleCode',
   footer: 'All rights reserved - Gatsby Template by scttcper / gatsby-casper',
   source: 'https://github.com/jung-youjin/blog',
+  email: 'jungyoujin0527@gmail.com',
 };
 
 export default config;

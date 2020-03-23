@@ -6,6 +6,7 @@ import * as React from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { Helmet } from 'react-helmet';
+import { DiscussionEmbed } from "disqus-react"
 
 import AuthorCard from '../components/AuthorCard';
 import Footer from '../components/Footer';
@@ -23,11 +24,17 @@ import { inner, outer, SiteHeader, SiteMain } from '../styles/shared';
 import config from '../website-config';
 
 
+
+
 const PostTemplate = css`
   .site-main {
     background: #fff;
     padding-bottom: 4vw;
     font-family: Georgia;
+  }
+  .Disqus {
+    padding-top: 10vw;
+    padding-bottom: 7vw;
   }
 `;
 
@@ -218,6 +225,13 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
     width = post.frontmatter.image.childImageSharp.fluid.sizes.split(', ')[1].split('px')[0];
     height = String(Number(width) / post.frontmatter.image.childImageSharp.fluid.aspectRatio);
   }
+  // disqus configuration
+  const disqusShortName = 'youjinjung'
+  const disqusConfig = {
+      identifier: post.frontmatter.id, // you can define anything as "identifier" for each blog post
+      title: post.frontmatter.title,
+      url: config.siteUrl + props.pathContext.slug,
+  }
 
   return (
     <IndexLayout className="post-template">
@@ -307,8 +321,13 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                 <AuthorCard author={post.frontmatter.author} />
                 <PostFullFooterRight authorId={post.frontmatter.author.id} />
               </PostFullFooter>
+              <hr/>
+              <div id="Disqus">
+                <DiscussionEmbed shortname={disqusShortName} config={disqusConfig} />
+              </div>
             </article>
           </div>
+
         </main>
 
         {/* Links to Previous/Next posts */}
@@ -346,6 +365,9 @@ export const query = graphql`
       htmlAst
       excerpt
       timeToRead
+      fields{
+        slug
+      }
       frontmatter {
         title
         userDate: date(formatString: "D MMMM YYYY")

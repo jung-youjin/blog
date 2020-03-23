@@ -5,11 +5,18 @@ module.exports = {
     title: 'youjin jung',
     description: 'youjinjung blog',
     siteUrl: 'https://youjinjung.me', // full path to blog - no ending slash
+    disqusShortname: 'youjinjung',
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-disqus',
+      options: {
+        shortname: 'youjinjung', // 이부분 수정
+      },
+    },
     'gatsby-plugin-sitemap',
     'gatsby-plugin-sharp',
     {
