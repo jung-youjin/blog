@@ -29,9 +29,11 @@
   - [x] page titles
   - [x] pagination
 - [x] disqus comments
+- [x] add react floating menu icon button
 - [ ] tags/ category page
 - [ ] about page
 - [ ] projects page - github api
+- [ ] google adsense(?) - probably afterwards
 
 
 #### Built by React based GatsbyJS ⚛️

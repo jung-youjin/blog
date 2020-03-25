@@ -49,6 +49,11 @@ const SiteNavLeft = styled.div`
   @media (max-width: 700px) {
     margin-right: 0;
     padding-left: 4vw;
+
+  @media (max-width: 500px) {
+    li {
+      display: none;
+    }
   }
 `;
 
@@ -87,7 +92,7 @@ const SiteNavRight = styled.div`
   align-items: center;
   height: 40px;
 
-  @media (max-width: 350px) {
+  @media (max-width: 500px) {
     display: none;
   }
 

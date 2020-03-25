@@ -334,8 +334,9 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                    icon="fas fa-plus fa-2x"
                    rotate={true}
                    href="/"
-                   styles={{backgroundColor: '#eb8c86', color: '#fff'}}
+                   styles={{backgroundColor: '#91AFE1', color: '#fff'}}
                    // onClick={() => alert('FAB Rocks!')}
+                   // #eb8c86
                    />
            </Container>
           </div>
