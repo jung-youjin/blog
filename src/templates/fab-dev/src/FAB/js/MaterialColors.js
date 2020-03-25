@@ -13,7 +13,9 @@ const lightColors = {
     grey:"#e0e0e0",
     darkerGrey: "#bdbdbd",
     black: "#212121",
-    white: "#f5f5f5"
+    white: "#f5f5f5",
+    babypink: '#ffb2b2',
+    skyblue: '#91AFE1',
 }
 
 const darkColors = {
@@ -31,7 +33,9 @@ const darkColors = {
     brown: "#4e342e",
     grey:"#424242",
     black: "#212121",
-    white: "#fafafa"
+    white: "#fafafa",
+    babypink: '#ffb2b2',
+    skyblue: '#91AFE1',
 }
 
-export {darkColors, lightColors}
+export {darkColors, lightColors};

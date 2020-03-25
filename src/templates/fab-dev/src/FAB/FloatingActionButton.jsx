@@ -33,7 +33,7 @@ const Link = props => {
 }
 
 const defaultItemStyles = {
-    backgroundColor: darkColors.lighterRed,
+    backgroundColor: darkColors.babypink,
     color: darkColors.white,
     textDecoration: "none",
     border: "none"

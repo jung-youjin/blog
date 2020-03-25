@@ -23,8 +23,12 @@ import { colors } from '../styles/colors';
 import { inner, outer, SiteHeader, SiteMain } from '../styles/shared';
 import config from '../website-config';
 
-import { Container, Button, Link as ButtonLink } from 'react-floating-action-button'
+import { Container, Button, Link as ButtonLink, darkColors, lightColors } from 'react-floating-action-button'
+// import { Container, Link, Button, darkColors, lightColors } from './fab-dev/src/FAB/FloatingActionButton.jsx'
+import logo from './fab-dev/src/logo.svg';
+import './fab-dev/src/./App.css';
 
+import instagram from './icon/instagram.svg';
 
 const PostTemplate = css`
   .site-main {
@@ -37,11 +41,15 @@ const PostTemplate = css`
     padding-bottom: 7vw;
   }
   .mbcontainer {
-    z-index: 100;
-    display: flex;
+    z-index: 50;
     position: absolute;
   }
+  .fab-container {
+    position: absoulte;
+    z-index: 70;
+  }
 `;
+
 
 export const PostFull = css`
   position: relative;
@@ -242,6 +250,8 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
     <IndexLayout className="post-template">
       <Helmet>
         <html lang={config.lang} />
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <title>{post.frontmatter.title}</title>
 
         <meta name="description" content={post.excerpt} />
@@ -290,18 +300,41 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
         <main id="site-main" className="site-main" css={[SiteMain, outer]}>
           <div id="mbcontainer">
             <Container>
-               <ButtonLink href="about"
+              <ButtonLink href="/"
+                  tooltip="Home"
+                  icon="fas fa-home fa-lg"
+                  className="fab-item btn btn-link btn-lg text-white"
+                  styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
+                  />
+               <ButtonLink href="/about"
                    tooltip="About"
-                   icon="far fa-sticky-note" />
-               <ButtonLink href="tags/blog"
+                   icon="fas fa-user fa-lg"
+                   styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
+                   />
+               <ButtonLink href="/tags/blog"
                    tooltip="Blog"
-                   icon="fas fa-user-plus"
-                   className="fab-item btn btn-link btn-lg text-white" />
+                   icon="fas fa-book-open fa-lg"
+                   className="fab-item btn btn-link btn-lg text-white"
+                   styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
+                   />
+               <ButtonLink href="https://github.com/jung-youjin"
+                   tooltip="Github"
+                   icon="fab fa-github fa-lg"
+                   className="fab-item btn btn-link btn-lg text-white"
+                   styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
+                   />
+               <ButtonLink href="https://instagram.com/_jungyoujin"
+                   tooltip="Instagram"
+                   icon="fab fa-instagram fa-lg"
+                   className="fab-item btn btn-link btn-lg text-white"
+                   styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
+                   />
                <Button
-                   tooltip="Home"
-                   icon="fas fa-plus"
+                   tooltip="Menu"
+                   icon="fas fa-plus fa-2x"
                    rotate={true}
                    href="/"
+                   styles={{backgroundColor: '#eb8c86', color: '#fff'}}
                    // onClick={() => alert('FAB Rocks!')}
                    />
            </Container>

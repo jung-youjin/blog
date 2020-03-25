@@ -35,7 +35,7 @@ const HomePosts = css`
     z-index: -1;
     position: absolute;
     top: 50px;
-    
+
   }
 
   @media (min-width: 795px) {
@@ -204,24 +204,7 @@ const IndexPage: React.FC<IndexProps> = props => {
               })}
             </div>
           </div>
-          <div id="mbcontainer">
-            <Container>
-               <Link href="about"
-                   tooltip="About"
-                   icon="far fa-sticky-note" />
-               <Link href="tags/blog"
-                   tooltip="Blog"
-                   icon="fas fa-user-plus"
-                   className="fab-item btn btn-link btn-lg text-white" />
-               <Button
-                   tooltip="Home"
-                   icon="fas fa-plus"
-                   rotate={true}
-                   href="/"
-                   // onClick={() => alert('FAB Rocks!')}
-                   />
-           </Container>
-          </div>
+
         </main>
         {props.children}
         <Pagination currentPage={props.pageContext.currentPage} numPages={props.pageContext.numPages} />
