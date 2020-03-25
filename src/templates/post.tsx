@@ -23,7 +23,7 @@ import { colors } from '../styles/colors';
 import { inner, outer, SiteHeader, SiteMain } from '../styles/shared';
 import config from '../website-config';
 
-
+import { Container, Button, Link as ButtonLink } from 'react-floating-action-button'
 
 
 const PostTemplate = css`
@@ -35,6 +35,11 @@ const PostTemplate = css`
   .Disqus {
     padding-top: 10vw;
     padding-bottom: 7vw;
+  }
+  .mbcontainer {
+    z-index: 100;
+    display: flex;
+    position: absolute;
   }
 `;
 
@@ -83,7 +88,7 @@ const PostFullMeta = styled.section`
 `;
 
 const PostFullMetaDate = styled.time`
-  color: ${colors.blue};
+  color: ${colors.skyblue};
 `;
 
 export const PostFullTitle = styled.h1`
@@ -283,6 +288,24 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
           </div>
         </header>
         <main id="site-main" className="site-main" css={[SiteMain, outer]}>
+          <div id="mbcontainer">
+            <Container>
+               <ButtonLink href="about"
+                   tooltip="About"
+                   icon="far fa-sticky-note" />
+               <ButtonLink href="tags/blog"
+                   tooltip="Blog"
+                   icon="fas fa-user-plus"
+                   className="fab-item btn btn-link btn-lg text-white" />
+               <Button
+                   tooltip="Home"
+                   icon="fas fa-plus"
+                   rotate={true}
+                   href="/"
+                   // onClick={() => alert('FAB Rocks!')}
+                   />
+           </Container>
+          </div>
           <div css={inner}>
             {/* TODO: no-image css tag? */}
             <article css={[PostFull, !post.frontmatter.image && NoImage]}>

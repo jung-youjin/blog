@@ -27,14 +27,24 @@ import {
 } from '../styles/shared';
 import { PageContext } from './post';
 
+import { Container, Button, Link } from 'react-floating-action-button'
+
 const HomePosts = css`
+
+  .mbcontainer {
+    z-index: -1;
+    position: absolute;
+    top: 50px;
+    
+  }
+
   @media (min-width: 795px) {
     .post-card:nth-of-type(6n + 1):not(.no-image) {
       flex: 1 1 100%;
       flex-direction: row;
     }
 
-    .Typical {
+    .typical {
       font-size: 0.8rem;
     }
 
@@ -102,6 +112,7 @@ const IndexPage: React.FC<IndexProps> = props => {
   const height = String(Number(width) / props.data.header.childImageSharp.fluid.aspectRatio);
 
   return (
+
     <IndexLayout css={HomePosts}>
       <Helmet>
         <html lang={config.lang} />
@@ -172,7 +183,7 @@ const IndexPage: React.FC<IndexProps> = props => {
                     ' I am a music-lover 🎧', 900,
                   ]}
                   loop={Infinity}
-                  wrapper="Typical"
+                  wrapper="typical"
                 />
               </SiteDescription>
             </SiteHeaderContent>
@@ -192,6 +203,24 @@ const IndexPage: React.FC<IndexProps> = props => {
                 );
               })}
             </div>
+          </div>
+          <div id="mbcontainer">
+            <Container>
+               <Link href="about"
+                   tooltip="About"
+                   icon="far fa-sticky-note" />
+               <Link href="tags/blog"
+                   tooltip="Blog"
+                   icon="fas fa-user-plus"
+                   className="fab-item btn btn-link btn-lg text-white" />
+               <Button
+                   tooltip="Home"
+                   icon="fas fa-plus"
+                   rotate={true}
+                   href="/"
+                   // onClick={() => alert('FAB Rocks!')}
+                   />
+           </Container>
           </div>
         </main>
         {props.children}

@@ -12,4 +12,5 @@ export const colors = {
   brown: '#a3821a',
   babypink: '#ffb2b2',
   skyblue: '#91AFE1',
+  white: '#fff',
 };

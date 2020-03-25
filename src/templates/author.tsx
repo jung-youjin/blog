@@ -54,13 +54,14 @@ const AuthorBio = styled.h2`
   line-height: 1.3em;
   font-weight: 300;
   letter-spacing: 0.5px;
-  opacity: 0.8;
+  opacity: 0.9;
+  font-family: 'Georgia';
 `;
 
 const Bull = styled.span`
   display: inline-block;
   margin: 0 12px;
-  opacity: 0.5;
+  opacity: 0.9;
 `;
 
 const AuthorProfileBioImage = css`
@@ -225,6 +226,18 @@ const Author: React.FC<AuthorTemplateProps> = props => {
                     <Github />
                   </a>
                 )}
+                {author.email && (
+                  <a
+                    className="social-link-email"
+                    css={SocialLink}
+                    href={`mailto:${author.email}`}
+                    title="Email"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Email />
+                  </a>
+                )}
                 {/* TODO: RSS for author */}
                 {/* <a
                   css={SocialLink} className="social-link-rss"
@@ -271,6 +284,7 @@ export const pageQuery = graphql`
       bio
       github
       location
+      email
       profile_image {
         childImageSharp {
           fluid(maxWidth: 3720) {

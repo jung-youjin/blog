@@ -6,6 +6,7 @@
   website: https://youjinjung.me
   location: On B787-1000
   profile_image: img/cherryblossom1.jpg
+  email: jungyoujin0527@gmail.com
 - id: Ghost
   avatar: avatars/favi_logo.png
   bio: This is another test author with a profile background image
@@ -14,3 +15,4 @@
   website: https://ghost.org/
   location: On a plane
   profile_image: img/alex-knight-326705-unsplash.jpg
+  email: jungyoujin0527@gmail.com

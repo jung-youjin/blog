@@ -13,17 +13,21 @@ export const inner = css`
   margin: 0 auto;
   max-width: 1040px;
   width: 100%;
+
 `;
 
 export const SiteMain = css`
   z-index: 100;
   flex-grow: 1;
+  .mbcontainer {
+    z-index:100;
+  }
 `;
 
 export const SiteTitle = styled.h1`
   z-index: 10;
   margin: 0;
-  padding-top: 10vw;
+  padding-top: 2vw;
   font-size: 3.8rem;
   font-weight: 700;
 `;
@@ -145,7 +149,7 @@ export const SiteHeaderStyles = css`
 export const AuthorProfileImage = css`
   display: block;
   /* background: color(var(--lightgrey) l(+10%)); */
-  background: ${lighten('0.1', colors.lightgrey)};
+  background: ${lighten('0.1', colors.white)};
   border-radius: 100%;
   object-fit: cover;
   margin-right: 15px;
