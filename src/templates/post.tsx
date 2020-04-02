@@ -25,8 +25,7 @@ import config from '../website-config';
 
 import { Container, Button, Link as ButtonLink, darkColors, lightColors } from 'react-floating-action-button'
 // import { Container, Link, Button, darkColors, lightColors } from './fab-dev/src/FAB/FloatingActionButton.jsx'
-import logo from './fab-dev/src/logo.svg';
-import './fab-dev/src/./App.css';
+
 
 import instagram from './icon/instagram.svg';
 
