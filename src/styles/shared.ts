@@ -19,15 +19,12 @@ export const inner = css`
 export const SiteMain = css`
   z-index: 100;
   flex-grow: 1;
-  .mbcontainer {
-    z-index:100;
-  }
 `;
 
 export const SiteTitle = styled.h1`
   z-index: 10;
   margin: 0;
-  padding-top: 2vw;
+  padding-top: 10vw;
   font-size: 3.8rem;
   font-weight: 700;
 `;
@@ -149,7 +146,7 @@ export const SiteHeaderStyles = css`
 export const AuthorProfileImage = css`
   display: block;
   /* background: color(var(--lightgrey) l(+10%)); */
-  background: ${lighten('0.1', colors.white)};
+  background: ${lighten('0.1', colors.lightgrey)};
   border-radius: 100%;
   object-fit: cover;
   margin-right: 15px;

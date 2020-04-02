@@ -54,6 +54,7 @@ const PostTemplate = css`
 export const PostFull = css`
   position: relative;
   z-index: 50;
+
 `;
 
 export const NoImage = css`
@@ -92,15 +93,17 @@ const PostFullMeta = styled.section`
   @media (max-width: 500px) {
     font-size: 1.2rem;
     line-height: 1.3em;
+
   }
 `;
 
 const PostFullMetaDate = styled.time`
   color: ${colors.skyblue};
+  font-size:1.5rem;
 `;
 
 export const PostFullTitle = styled.h1`
-  margin: 0;
+  margin: 10px 0 0 0;
   color: ${setLightness('0.05', colors.darkgrey)};
   @media (max-width: 500px) {
     font-size: 2.9rem;
@@ -124,7 +127,6 @@ const PostFullImage = styled.figure`
     height: 400px;
   }
   @media (max-width: 500px) {
-    margin-bottom: 4vw;
     height: 350px;
   }
 `;
@@ -369,6 +371,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                   />
                 </PostFullImage>
               )}
+              <div id = "whitepost">
               <PostContent htmlAst={post.htmlAst} />
 
               {/* The big email subscribe modal content */}
@@ -381,6 +384,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
               <hr/>
               <div id="Disqus">
                 <DiscussionEmbed shortname={disqusShortName} config={disqusConfig} />
+              </div>
               </div>
             </article>
           </div>

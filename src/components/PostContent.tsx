@@ -15,13 +15,36 @@ export const PostFullContent = styled.section`
   line-height: 1.6em;
   background: #fff;
 
+
+
   @media (max-width: 1170px) {
     padding: 5vw 7vw 0;
   }
   @media (max-width: 800px) {
     font-size: 1.9rem;
   }
+  @media (max-width: 500px) {
+    margin: 1rem;
 
+    p {
+      font-size: 1.6rem;
+      margin:0;
+
+
+    }
+    ul {
+      font-size: 1.6rem;
+      margin: 0;
+      padding-inline-start:20px;
+      padding-inline-end: 5px;
+    }
+    li {
+      font-size: 1.6rem;
+      word-break: break-all;
+      border: 20px;
+    }
+
+  }
   :before {
     content: '';
     position: relative;
@@ -34,6 +57,7 @@ export const PostFullContent = styled.section`
     background: rgba(39, 44, 49, 0.15);
     filter: blur(5px);
     transform: rotate(-5deg);
+    display:none;
   }
 
   :after {
@@ -48,6 +72,7 @@ export const PostFullContent = styled.section`
     background: rgba(39, 44, 49, 0.15);
     filter: blur(5px);
     transform: rotate(5deg);
+    display: none;
   }
 
   h1,
@@ -78,11 +103,11 @@ export const PostFullContent = styled.section`
   a {
     color: #000;
     word-break: break-word;
-    box-shadow: ${colors.blue} 0 -1px 0 inset;
+    box-shadow: ${colors.skyblue} 0 -1px 0 inset;
   }
 
   a:hover {
-    color: ${colors.blue};
+    color: ${colors.skyblue};
     text-decoration: none;
   }
 
@@ -108,7 +133,7 @@ export const PostFullContent = styled.section`
   img,
   video {
     display: block;
-    margin: 1.5em auto;
+    margin: auto;
     max-width: 1040px;
     height: auto;
   }
@@ -128,7 +153,7 @@ export const PostFullContent = styled.section`
   img + br + small {
     display: block;
     margin-top: -3em;
-    margin-bottom: 1.5em;
+
     text-align: center;
   }
 
@@ -230,7 +255,7 @@ export const PostFullContent = styled.section`
   }
 
   h1 {
-    margin: 0.5em 0 0.2em 0;
+    margin: 0.5em 0 0.9em 0;
     font-size: 4.6rem;
     font-weight: 700;
   }
@@ -278,7 +303,7 @@ export const PostFullContent = styled.section`
     margin: 0.5em 0;
     padding: 1em 0 1.5em;
     border: 0;
-    color: ${colors.blue};
+    color: ${colors.skyblue};
     font-family: Georgia, serif;
     font-size: 3.2rem;
     line-height: 1.35em;
@@ -373,7 +398,7 @@ export const PostFullContent = styled.section`
   }
 
   @media (max-width: 500px) {
-    padding: 0;
+    padding: 3vw;
     :before {
       display: none;
     }

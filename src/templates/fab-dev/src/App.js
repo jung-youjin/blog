@@ -21,7 +21,7 @@ class App extends Component {
             Learn React
           </a>
           <Container>
-            <Link 
+            <Link
             tooltip={"Ação 0"}
             icon="fas fa-plus" href="/baaah" styles={{backgroundColor: darkColors.purple, color: lightColors.cyan}}/>
             <Link

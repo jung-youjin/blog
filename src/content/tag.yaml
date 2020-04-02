@@ -11,5 +11,8 @@
   description: Source tag page.
   image: img/demo1.jpg
 - id: Getting Started
-  description: Source tag page. 
+  description: Source tag page.
   image: img/demo1.jpg
+- id: linuxkernel
+  description: Study notes of linux kernel programming
+  image: img/linuxkernel.jpg
