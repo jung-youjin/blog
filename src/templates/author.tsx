@@ -26,6 +26,7 @@ import Helmet from 'react-helmet';
 import config from '../website-config';
 import Website from '../components/icons/website';
 import Instagram from '../components/icons/instagram';
+import Email from '../components/icons/email';
 
 
 const HiddenMobile = css`

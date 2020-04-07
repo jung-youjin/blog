@@ -187,11 +187,24 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 };
 
-exports.onCreateWebpackConfig = ({ stage, actions }) => {
+exports.onCreateWebpackConfig = ({ stage, actions, loaders }) => {
   // adds sourcemaps for tsx in dev mode
   if (stage === `develop` || stage === `develop-html`) {
     actions.setWebpackConfig({
       devtool: 'eval-source-map',
     });
   }
+
+  if (stage === "build-html") {
+        actions.setWebpackConfig({
+            module: {
+                rules: [
+                    {
+                        test: /react-floating-action-button/,
+                        use: loaders.null(),
+                    },
+                ],
+            },
+        })
+    }
 };

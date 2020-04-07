@@ -4,7 +4,7 @@ title: "Gettysburg Address"
 author: Ghost
 tags: ["test"]
 image: img/demo1.jpg
-date: "1863-11-19T10:00:00.000Z"
+date: "1963-11-19T10:00:00.000Z"
 draft: false
 ---
 

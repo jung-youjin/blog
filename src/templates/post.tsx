@@ -6,7 +6,7 @@ import * as React from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { Helmet } from 'react-helmet';
-import { DiscussionEmbed } from "disqus-react"
+import { DiscussionEmbed } from "disqus-react";
 
 import AuthorCard from '../components/AuthorCard';
 import Footer from '../components/Footer';
@@ -23,11 +23,24 @@ import { colors } from '../styles/colors';
 import { inner, outer, SiteHeader, SiteMain } from '../styles/shared';
 import config from '../website-config';
 
-import { Container, Button, Link as ButtonLink, darkColors, lightColors } from 'react-floating-action-button'
+import { Container, Button, Link as BLink } from 'react-floating-action-button';
+import { window, document, exists } from 'browser-monads';
+import NoSSR from 'react-no-ssr';
+//
+// import Loadable from '@loadable/component';
+// const Container = Loadable(() => import('react-floating-action-button'));
+// export default () => ( <Container /> )
+
 // import { Container, Link, Button, darkColors, lightColors } from './fab-dev/src/FAB/FloatingActionButton.jsx'
 
+// import instagram from './icon/instagram.svg';
 
-import instagram from './icon/instagram.svg';
+// const Container, Button, Link as ButtonLink = (() => {
+//   if (typeof window !== 'undefined') {
+//     return require('react-floating-action-button')
+//   }
+// })()
+
 
 const PostTemplate = css`
   .site-main {
@@ -231,7 +244,25 @@ export interface PageContext {
   };
 }
 
+// class Container extends React.Component {
+//   constructor () {
+//     super();
+//     this.state = { showMap: false };
+//   }
+//   componentDidMount () {
+//     mapLib = require('react-floating-action-button');
+//     this.setState({ showMap: true });
+//   }
+// }
+
 const PageTemplate: React.FC<PageTemplateProps> = props => {
+  const isBrowser = typeof window !== 'undefined';
+  // componentDidMount() {
+  //   console.log("componentdidmount");
+  //   Container.init();
+  //   Button.init();
+  //   BLink.init();
+  // }
   const post = props.data.markdownRemark;
   let width = '';
   let height = '';
@@ -300,31 +331,32 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
         </header>
         <main id="site-main" className="site-main" css={[SiteMain, outer]}>
           <div id="mbcontainer">
+            <NoSSR>
             <Container>
-              <ButtonLink href="/"
+              <BLink href="/"
                   tooltip="Home"
                   icon="fas fa-home fa-lg"
                   className="fab-item btn btn-link btn-lg text-white"
                   styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
                   />
-               <ButtonLink href="/about"
+               <BLink href="/about"
                    tooltip="About"
                    icon="fas fa-user fa-lg"
                    styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
                    />
-               <ButtonLink href="/tags/blog"
+               <BLink href="/tags/blog"
                    tooltip="Blog"
                    icon="fas fa-book-open fa-lg"
                    className="fab-item btn btn-link btn-lg text-white"
                    styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
                    />
-               <ButtonLink href="https://github.com/jung-youjin"
+               <BLink href="https://github.com/jung-youjin"
                    tooltip="Github"
                    icon="fab fa-github fa-lg"
                    className="fab-item btn btn-link btn-lg text-white"
                    styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
                    />
-               <ButtonLink href="https://instagram.com/_jungyoujin"
+               <BLink href="https://instagram.com/_jungyoujin"
                    tooltip="Instagram"
                    icon="fab fa-instagram fa-lg"
                    className="fab-item btn btn-link btn-lg text-white"
@@ -339,8 +371,9 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                    // onClick={() => alert('FAB Rocks!')}
                    // #eb8c86
                    />
-           </Container>
-          </div>
+             </Container>
+             </NoSSR>
+            </div>
           <div css={inner}>
             {/* TODO: no-image css tag? */}
             <article css={[PostFull, !post.frontmatter.image && NoImage]}>
