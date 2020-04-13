@@ -4,11 +4,11 @@ title: "1강 - 유닉스, 리눅스 및 리눅스 커널 개념"
 author: youjin
 tags: ["linuxkernel"]
 image: ../img/linuxpenguin2.png
-date: "2020-04-01T18:06:00Z"
+date: "2020-03-28T18:06:00Z"
 draft: false
 ---
 
-# 1장) 유닉스, 리눅스 및 리눅스 커널 개념  
+# 1장) 유닉스, 리눅스 및 리눅스 커널 개념
 
 - 커널이란?
     - 운영체제의 핵심
