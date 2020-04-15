@@ -412,15 +412,19 @@ export const PostFullContent = styled.section`
   code[class*='language-'],
   pre[class*='language-'] {
     background: none;
+    background-color: #7a7a7a;
+    color: white;
     font-family: Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
     font-feature-settings: normal;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
-    word-wrap: normal;
+    word-wrap: break-word;
+    white-space: initial;
     line-height: 1.5;
     margin-bottom: 0;
+
 
     -moz-tab-size: 4;
     -o-tab-size: 4;
