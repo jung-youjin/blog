@@ -92,7 +92,7 @@ const SiteNavRight = styled.div`
   align-items: center;
   height: 40px;
 
-  @media (max-width: 500px) {
+  @media (max-width: 450px) {
     display: none;
   }
 
@@ -156,7 +156,7 @@ class SiteNav extends React.Component<SiteNavProps> {
               <Link to="/about">About</Link>
             </li>
             <li role="menuitem">
-              <Link to="/tags/blog/">Blog</Link>
+              <Link to="/404">Tags</Link>
             </li>
           </ul>
         </SiteNavLeft>

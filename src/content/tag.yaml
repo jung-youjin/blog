@@ -16,3 +16,6 @@
 - id: linuxkernel
   description: Study notes of linux kernel programming
   image: img/linuxkernel.jpg
+- id: network
+  description: Study notes of computer network and communications
+  image: img/network.png

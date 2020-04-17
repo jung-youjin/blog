@@ -333,19 +333,8 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
           <div id="mbcontainer">
             <NoSSR>
             <Container>
-              <BLink href="/"
-                  tooltip="Home"
-                  icon="fas fa-home fa-lg"
-                  className="fab-item btn btn-link btn-lg text-white"
-                  styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
-                  />
-               <BLink href="/about"
-                   tooltip="About"
-                   icon="fas fa-user fa-lg"
-                   styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
-                   />
-               <BLink href="/tags/blog"
-                   tooltip="Blog"
+               <BLink href="/tagslist"
+                   tooltip="Tags"
                    icon="fas fa-book-open fa-lg"
                    className="fab-item btn btn-link btn-lg text-white"
                    styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
@@ -359,6 +348,17 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                <BLink href="https://instagram.com/_jungyoujin"
                    tooltip="Instagram"
                    icon="fab fa-instagram fa-lg"
+                   className="fab-item btn btn-link btn-lg text-white"
+                   styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
+                   />
+               <BLink href="/about"
+                   tooltip="About"
+                   icon="fas fa-user fa-lg"
+                   styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
+                   />
+               <BLink href="/"
+                   tooltip="Home"
+                   icon="fas fa-home fa-lg"
                    className="fab-item btn btn-link btn-lg text-white"
                    styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
                    />

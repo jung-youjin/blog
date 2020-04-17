@@ -185,6 +185,17 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
+  // Create tagslist page
+  const tagsList = path.resolve('./src/templates/tagslist.tsx');
+  result.data.allAuthorYaml.edges.forEach(edge => {
+    createPage({
+      path: `/tagslist/`,
+      component: tagsList,
+      context: {
+        author: edge.node.id,
+      },
+    });
+  });
 };
 
 exports.onCreateWebpackConfig = ({ stage, actions, loaders }) => {

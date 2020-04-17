@@ -176,7 +176,7 @@ const IndexPage: React.FC<IndexProps> = props => {
                     ' I am an engineer 🔧🔌', 1200,
                     ' I am a designer 👑', 1000,
                     ' I am a developer 💻', 1000,
-                    ' I am a blogger ✒️', 8500,
+                    ' I am a blogger ✒️', 850,
                     ' I am a photographer 📷', 850,
                     ' I am an aircraft-lover ✈️', 900,
                     ' I am a coffee-lover ☕️', 900,
