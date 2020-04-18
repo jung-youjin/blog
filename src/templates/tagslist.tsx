@@ -129,11 +129,11 @@ const TagsList: React.FC<TagslistTemplateProps> = props => {
   const author = props.data.authorYaml;
   const tagslist = props.data.allTagYaml;
   const test = props.data.tagYaml;
-  // const tagedges = tagslist.edges.filter(
-  //   edge => {
-  //
-  //   }
-  // )
+  const tagedges = tagslist.edges.filter(
+    edge => {
+      return edge.node.id;
+    }
+  );
   const edges = props.data.allMarkdownRemark.edges.filter(
     edge => {
       const isDraft = (edge.node.frontmatter.draft !== true ||
@@ -142,7 +142,9 @@ const TagsList: React.FC<TagslistTemplateProps> = props => {
     }
   );
   const totalCount = edges.length;
-
+  console.log(tagslist.edges);
+  console.log(tagedges);
+  console.log('hello');
   return (
     <IndexLayout>
       <Helmet>
@@ -242,8 +244,9 @@ const TagsList: React.FC<TagslistTemplateProps> = props => {
                   </a>
                 )}
 
-                <ol>{tagslist.edges.node.id}</ol>
+
                 <ol>{test.id}</ol>
+
 
                 {/* TODO: RSS for author */}
                 {/* <a

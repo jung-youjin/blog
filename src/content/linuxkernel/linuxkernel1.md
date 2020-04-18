@@ -62,7 +62,7 @@ draft: false
 - Application - Kernel - Hardware 간의 관계
     - OS & Kernel
 
-    ![1/diagram1.png](1/diagram1.png)
+    ![1/diagram1.png](../linuxkernel1/1/diagram1.png)
 
 
 
