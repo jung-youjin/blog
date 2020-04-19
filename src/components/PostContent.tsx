@@ -43,6 +43,10 @@ export const PostFullContent = styled.section`
       word-break: break-all;
       border: 20px;
     }
+    ol {
+      margin: 0;
+      padding-right: 0;
+    }
 
   }
   :before {
@@ -393,7 +397,7 @@ export const PostFullContent = styled.section`
   table th,
   table td {
     padding: 6px 12px;
-    /* border: color(var(--whitegrey) l(-1%) s(-5%)) 1px solid; */
+
     border: ${setSaturation('0.05', darken('0.01', colors.whitegrey))} 1px solid;
   }
 
@@ -440,6 +444,8 @@ export const PostFullContent = styled.section`
   pre[class*='language-'] {
     overflow: auto;
     padding: 1.3125rem;
+    border-color: white;
+    overflow:auto;
   }
 
   pre[class*='language-']::-moz-selection {
@@ -548,6 +554,9 @@ export const PostFullContent = styled.section`
     padding-right: 1em;
     padding-left: 1.25em;
     border-left: 0.25em solid #ffa7c4;
+    border-style: none;
+    padding-top:1em;
+    padding-bottom:1em;
   }
 
   .gatsby-highlight {
@@ -555,9 +564,10 @@ export const PostFullContent = styled.section`
     margin-left: -1.3125rem;
     margin-right: -1.3125rem;
     border-radius: 10px;
-    background: #011627;
+    white-space: pre-wrap;
     -webkit-overflow-scrolling: touch;
     overflow: auto;
+    border-style: none;
   }
 
   @media (max-width: 672px) {
