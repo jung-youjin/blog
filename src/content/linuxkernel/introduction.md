@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "0강) 리눅스 및 커널프로그래밍 공부 인트로"
+title: "0강 - 리눅스 및 커널프로그래밍 공부 인트로"
 author: youjin
 tags: ["linuxkernel"]
 image: ../img/linuxpenguin2.png
