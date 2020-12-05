@@ -10,6 +10,10 @@ import { PostFullContent } from '../components/PostContent';
 import Footer from '../components/Footer';
 import Helmet from 'react-helmet';
 
+import portfolio_pdf1 from '../content/portfolio_pdf/portfolio_pdf1024_1.jpg';
+import portfolio_pdf2 from '../content/portfolio_pdf/portfolio_pdf1024_2.jpg';
+import portfolio_pdf3 from '../content/portfolio_pdf/portfolio_pdf1024_3.jpg';
+
 const PageTemplate = css`
   .site-main {
     background: #fff;
@@ -27,7 +31,6 @@ const About_title = css`
     font-family: Consolas;
   }
 `;
-
 
 
 const About: React.FC = () => (
@@ -49,8 +52,21 @@ const About: React.FC = () => (
 
           <PostFullContent className="post-full-content">
             <div className="post-content">
-              <h3> youjin's blog - since 2020.03.20 ~ing </h3>
-              <small><p> Welcome to my blog! Further contents to be updated...! Stay tuned! </p></small>
+
+              <h3>YouJin Jung's Portfolio</h3>
+
+              <small><p> Welcome to my blog! This is my portfolio section. Further contents to be updated...! Stay tuned! </p></small>
+              <div className="portfolio">
+
+                <img src = {portfolio_pdf1}/>
+                <img src = {portfolio_pdf2}/>
+                <img src = {portfolio_pdf3}/>
+
+              </div>
+
+              <h5> youjin's blog - since 2020.03.20 ~ing </h5>
+
+
             </div>
           </PostFullContent>
         </article>

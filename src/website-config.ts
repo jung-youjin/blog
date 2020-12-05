@@ -58,7 +58,7 @@ const config: WebsiteConfig = {
   github: 'https://github.com/jung-youjin',
   instagram: 'https://instagram.com/_jungyoujin',
   googleSiteVerification: 'GoogleCode',
-  footer: 'All rights reserved - Gatsby Template by scttcper / gatsby-casper',
+  footer: 'All rights reserved - gatsby-casper',
   source: 'https://github.com/jung-youjin/blog',
   email: 'jungyoujin0527@gmail.com',
 };
