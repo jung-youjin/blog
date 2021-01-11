@@ -1,5 +1,5 @@
 ## youjin's blog
-> https://youjinjung.me
+<a href="https://youjinjung.me">
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
