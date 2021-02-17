@@ -19,3 +19,6 @@
 - id: network
   description: Study notes of computer network and communications
   image: img/network.png
+- id: embeddedsw
+  description: Study notes of embedded software developement
+  image: img/embeddedsw1.png
