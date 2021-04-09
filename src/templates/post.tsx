@@ -333,7 +333,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
           <div id="mbcontainer">
             <NoSSR>
             <Container>
-               <BLink href="/tagslist"
+               <BLink href="/tags/diary"
                    tooltip="Tags"
                    icon="fas fa-book-open fa-lg"
                    className="fab-item btn btn-link btn-lg text-white"

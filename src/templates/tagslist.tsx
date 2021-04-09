@@ -142,6 +142,10 @@ const TagsList: React.FC<TagslistTemplateProps> = props => {
     }
   );
   const totalCount = edges.length;
+  console.log(author);
+  console.log(props.data.authorYaml[1]);
+  console.log(props.data);
+  console.log(props);
   console.log(tagslist.edges);
   console.log(tagedges);
   console.log('hello');

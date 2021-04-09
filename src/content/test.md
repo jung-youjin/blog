@@ -2,7 +2,7 @@
 layout: post
 title: "마크다운 테스트 글"
 author: youjin
-tags: ["blog"]
+tags: ["diary"]
 image: img/writing.jpg
 date: "2020-03-21T23:46:37.121Z"
 draft: false
