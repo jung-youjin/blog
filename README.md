@@ -1,6 +1,7 @@
 ## youjin's blog
 > https://youjinjung.me
 
+<br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <a href="https://www.npmjs.org/package/gatsby">
@@ -30,15 +31,18 @@
   - [x] pagination
 - [x] disqus comments
 - [x] add react floating menu icon button
+- [ ] add google analytics service
 - [ ] tags/ category page
 - [ ] about page
 - [ ] projects page - github api
 - [ ] google adsense(?) - probably afterwards
 
+---
 
-#### Built by React based GatsbyJS ⚛️
-#### Powered by GraphQL
-#### Deployed by Netlify
-[![Deployed to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/scttcper/gatsby-casper)
+
+##### Built by React based GatsbyJS ⚛️
+##### Powered by GraphQL
+##### Deployed by Netlify
+[![Deployed to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com)
 
 This is a static blog generator and starter gatsby repo. A port of [Casper](https://github.com/TryGhost/Casper) v2 a theme from [Ghost](https://ghost.org/) for [GatsbyJS](https://www.gatsbyjs.org/) using [TypeScript](https://www.typescriptlang.org/).
