@@ -31,18 +31,16 @@
   - [x] pagination
 - [x] disqus comments
 - [x] add react floating menu icon button
-- [ ] add google analytics service
+- [x] add google analytics service
 - [ ] tags/ category page
-- [ ] about page
+- [ ] about page (working on portfolio)
 - [ ] projects page - github api
-- [ ] google adsense(?) - probably afterwards
+
 
 ---
 
 
-##### Built by React based GatsbyJS ⚛️
-##### Powered by GraphQL
-##### Deployed by Netlify
+##### Built by React based GatsbyJS ⚛️, Powered by GraphQL, Deployed by Netlify
 [![Deployed to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com)
 
-This is a static blog generator and starter gatsby repo. A port of [Casper](https://github.com/TryGhost/Casper) v2 a theme from [Ghost](https://ghost.org/) for [GatsbyJS](https://www.gatsbyjs.org/) using [TypeScript](https://www.typescriptlang.org/).
+This is a static blog repolished from [Casper](https://github.com/TryGhost/Casper) v2 a theme from [Ghost](https://ghost.org/) for [GatsbyJS](https://www.gatsbyjs.org/) using [TypeScript](https://www.typescriptlang.org/).
