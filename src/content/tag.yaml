@@ -22,3 +22,6 @@
 - id: embeddedsw
   description: Study notes of embedded software developement
   image: img/embeddedsw1.png
+- id: diary
+  description: Study notes of embedded software developement
+  image: img/diary-cover.jpg
