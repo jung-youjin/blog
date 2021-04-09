@@ -337,37 +337,37 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                    tooltip="Tags"
                    icon="fas fa-book-open fa-lg"
                    className="fab-item btn btn-link btn-lg text-white"
-                   styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
+                   styles={{backgroundColor: '#ffb2b2', color: '#ffffff'}}
                    />
                <BLink href="https://github.com/jung-youjin"
                    tooltip="Github"
                    icon="fab fa-github fa-lg"
                    className="fab-item btn btn-link btn-lg text-white"
-                   styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
+                   styles={{backgroundColor: '#ffb2b2', color: '#ffffff'}}
                    />
                <BLink href="https://instagram.com/_jungyoujin"
                    tooltip="Instagram"
                    icon="fab fa-instagram fa-lg"
                    className="fab-item btn btn-link btn-lg text-white"
-                   styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
+                   styles={{backgroundColor: '#ffb2b2', color: '#ffffff'}}
                    />
                <BLink href="/about"
                    tooltip="About"
                    icon="fas fa-user fa-lg"
-                   styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
+                   styles={{backgroundColor: '#ffb2b2', color: '#ffffff'}}
                    />
                <BLink href="/"
                    tooltip="Home"
                    icon="fas fa-home fa-lg"
                    className="fab-item btn btn-link btn-lg text-white"
-                   styles={{backgroundColor: '#ffb2b2', color: '#fff'}}
+                   styles={{backgroundColor: '#ffb2b2', color: '#ffffff'}}
                    />
                <Button
                    tooltip="Menu"
                    icon="fas fa-plus fa-2x"
                    rotate={true}
                    href="/"
-                   styles={{backgroundColor: '#91AFE1', color: '#fff'}}
+                   styles={{backgroundColor: '#91AFE1', color: '#ffffff'}}
                    // onClick={() => alert('FAB Rocks!')}
                    // #eb8c86
                    />
