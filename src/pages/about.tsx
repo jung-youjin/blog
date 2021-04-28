@@ -51,6 +51,7 @@ const About: React.FC = () => (
           </PostFullHeader>
 
           <PostFullContent className="post-full-content">
+            <meta charset="UTF-8">
             <div className="post-content">
 
               <h3>YouJin Jung's Portfolio</h3>
