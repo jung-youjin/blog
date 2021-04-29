@@ -51,7 +51,7 @@ const About: React.FC = () => (
           </PostFullHeader>
 
           <PostFullContent className="post-full-content">
-            <meta charset="UTF-8">
+            <meta charset="UTF-8"/>
             <div className="post-content">
 
               <h3>YouJin Jung's Portfolio</h3>
@@ -60,9 +60,9 @@ const About: React.FC = () => (
               <small><p>현재 재정비 및 공사중!! &U+2692; </p></small>
               <div className="portfolio">
 
-                // <!--img src = {portfolio_pdf1}/-->
-                // <!--img src = {portfolio_pdf2}/-->
-                // <!--img src = {portfolio_pdf3}/-->
+                // <img src = {portfolio_pdf1}/>
+                // <img src = {portfolio_pdf2}/>
+                // <img src = {portfolio_pdf3}/>
 
               </div>
 
