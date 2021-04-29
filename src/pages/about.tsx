@@ -57,7 +57,7 @@ const About: React.FC = () => (
               <h3>YouJin Jung's Portfolio</h3>
 
               <small><p> Welcome to my blog! This is my portfolio section. This section has been <b>temporarily archived</b> due to update progress! Further contents to be updated...! Stay tuned! </p></small>
-              <small><p>🛠⚙🛠⚙ --- 현재 재정비 및 공사중!! --- 🛠⚙🛠⚙ </p></small>
+              <small><p>🛠⚙🛠⚙ --- 현재 재정비 및 공사중!!! --- 🛠⚙🛠⚙ </p></small>
               <div className="portfolio">
 
 
