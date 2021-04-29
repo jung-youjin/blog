@@ -51,18 +51,15 @@ const About: React.FC = () => (
           </PostFullHeader>
 
           <PostFullContent className="post-full-content">
-            <meta charset="UTF-8">
+            <meta charset="UTF-8"/>
             <div className="post-content">
 
               <h3>YouJin Jung's Portfolio</h3>
 
               <small><p> Welcome to my blog! This is my portfolio section. This section has been <b>temporarily archived</b> due to update progress! Further contents to be updated...! Stay tuned! </p></small>
-              <small><p>현재 재정비 및 공사중!! &U+2692; </p></small>
+              <small><p>🛠⚙🛠⚙ --- 현재 재정비 및 공사중!! --- 🛠⚙🛠⚙ </p></small>
               <div className="portfolio">
 
-                // <!--img src = {portfolio_pdf1}/-->
-                // <!--img src = {portfolio_pdf2}/-->
-                // <!--img src = {portfolio_pdf3}/-->
 
               </div>
 
