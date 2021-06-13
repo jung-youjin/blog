@@ -13,7 +13,7 @@ import Helmet from 'react-helmet';
 import portfolio_pdf1 from '../content/portfolio_pdf/0001.jpg';
 import portfolio_pdf2 from '../content/portfolio_pdf/0002.jpg';
 import portfolio_pdf3 from '../content/portfolio_pdf/0003.jpg';
-import portfolio_pdf3 from '../content/portfolio_pdf/0004.jpg';
+import portfolio_pdf4 from '../content/portfolio_pdf/0004.jpg';
 
 const PageTemplate = css`
   .site-main {
