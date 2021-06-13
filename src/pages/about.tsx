@@ -10,9 +10,10 @@ import { PostFullContent } from '../components/PostContent';
 import Footer from '../components/Footer';
 import Helmet from 'react-helmet';
 
-import portfolio_pdf1 from '../content/portfolio_pdf/portfolio_pdf1024_1.jpg';
-import portfolio_pdf2 from '../content/portfolio_pdf/portfolio_pdf1024_2.jpg';
-import portfolio_pdf3 from '../content/portfolio_pdf/portfolio_pdf1024_3.jpg';
+import portfolio_pdf1 from '../content/portfolio_pdf/0001.jpg';
+import portfolio_pdf2 from '../content/portfolio_pdf/0002.jpg';
+import portfolio_pdf3 from '../content/portfolio_pdf/0003.jpg';
+import portfolio_pdf3 from '../content/portfolio_pdf/0004.jpg';
 
 const PageTemplate = css`
   .site-main {
@@ -54,17 +55,30 @@ const About: React.FC = () => (
             <meta charset="UTF-8"/>
             <div className="post-content">
 
+              <br/>
+
               <h3>YouJin Jung's Portfolio</h3>
 
-              <small><p> Welcome to my blog! This is my portfolio section. This section has been <b>temporarily archived</b> due to update progress! Further contents to be updated...! Stay tuned! </p></small>
-              <small><p>🛠⚙🛠⚙ --- 현재 재정비 및 공사중!!! --- 🛠⚙🛠⚙ </p></small>
+              <small><p> Welcome to my blog! This is my portfolio section. <b>UPDATING IN PROGRESS!</b> Further contents to be updated...! Stay tuned! </p></small>
               <div className="portfolio">
 
+                <img src = {portfolio_pdf1}/>
+                <img src = {portfolio_pdf2}/>
+                <img src = {portfolio_pdf3}/>
+                <img src = {portfolio_pdf4}/>
 
               </div>
 
               <h5> youjin's blog - since 2020.03.20 ~ing </h5>
 
+              <br/>
+
+              <small><p>🛠⚙🛠⚙ --- 현재 재정비 및 공사중!!! --- 🛠⚙🛠⚙ </p></small>
+
+
+              <h5> youjin's blog - since 2020.03.20 ~ing </h5>
+
+              <br/>
 
             </div>
           </PostFullContent>
