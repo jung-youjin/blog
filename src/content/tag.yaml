@@ -3,7 +3,7 @@
   image: img/speeches-cover.jpg
 - id: blog
   description: This is my blog section.
-  image: img/cherryblossom1.jpg
+  image: img/cover/may-27-2019-galaxy-i-zwicky-18.jpg
 - id: test
   description: Test tag.
   image: img/computer.jpg

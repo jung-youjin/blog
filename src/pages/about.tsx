@@ -61,15 +61,14 @@ const About: React.FC = () => (
 
               <small><p> Welcome to my blog! This is my portfolio section. <b>UPDATING IN PROGRESS!</b> Further contents to be updated...! Stay tuned! </p></small>
               <div className="portfolio">
-
+                {/*
                 <img src = {portfolio_pdf1}/>
                 <img src = {portfolio_pdf2}/>
                 <img src = {portfolio_pdf3}/>
                 <img src = {portfolio_pdf4}/>
-
+                */}
               </div>
 
-              <h5> youjin's blog - since 2020.03.20 ~ing </h5>
 
               <br/>
 

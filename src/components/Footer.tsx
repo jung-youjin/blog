@@ -34,7 +34,7 @@ const SiteFooterContent = css`
   @media (max-width: 650px) {
     flex-direction: column;
   }
-  background-image: url('./content/img/cherryblossom1.jpg');
+  background-image: url('./content/img/cover/may-27-2019-galaxy-i-zwicky-18.jpg');
 `;
 
 const SiteFooterNav = styled.nav`
