@@ -5,5 +5,9 @@ diary-4
 automotive-1
 ![aspice](https://user-images.githubusercontent.com/37402072/127106691-ad8f55f6-856c-4e4b-84f7-6e0a32a3f3de.png)
 gce-1
-![image](https://user-images.githubusercontent.com/37402072/130311575-0a03420f-8855-42da-9613-9e5a7da51740.png)
+![gce-application](https://user-images.githubusercontent.com/37402072/130311575-0a03420f-8855-42da-9613-9e5a7da51740.png)
+![gce-spotlight1](https://user-images.githubusercontent.com/37402072/130311918-1637ec98-be5a-4e54-b03f-d223c7abd845.png)
+![student developer pack](https://user-images.githubusercontent.com/37402072/130312051-204f5ffd-148c-4ae9-93d1-a93eb9d63b8c.png)
+![gce-korea](https://user-images.githubusercontent.com/37402072/130313553-4466193b-2689-4bed-9236-1d695c262fbf.png)
+
 
