@@ -10,9 +10,6 @@ module.exports = {
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
   },
-  flags: {
-    PRESERVE_WEBPACK_CACHE: true,
-  },
   plugins: [
     {
       resolve: 'gatsby-plugin-disqus',
