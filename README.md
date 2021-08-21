@@ -10,8 +10,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 <a href="https://www.npmjs.org/package/gatsby">
   <img src="https://img.shields.io/npm/v/gatsby.svg?style=for-the-badge" alt="Current npm package version." />
-</a> 
+</a>
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg?style=for-the-badge)](https://GitHub.com/Naereen/ama)
+
 ### Progress
 ---
 - [x] emotion / component styles

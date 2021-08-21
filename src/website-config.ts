@@ -51,7 +51,7 @@ export interface WebsiteConfig {
 const config: WebsiteConfig = {
   title: 'youjin jung',
   description: ' ',
-  coverImage: 'img/cover/may-27-2019-galaxy-i-zwicky-18.jpg',
+  coverImage: 'img/cover/bright-cloud.jpg',
   logo: 'img/youjin_logo.png',
   lang: 'en',
   siteUrl: 'https://youjinjung.me',
