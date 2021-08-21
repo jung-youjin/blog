@@ -4,3 +4,6 @@ diary-4
 ![gce2](https://user-images.githubusercontent.com/37402072/123827215-640fff80-d93b-11eb-9777-cc9f77f32099.JPG)
 automotive-1
 ![aspice](https://user-images.githubusercontent.com/37402072/127106691-ad8f55f6-856c-4e4b-84f7-6e0a32a3f3de.png)
+gce-1
+![image](https://user-images.githubusercontent.com/37402072/130311575-0a03420f-8855-42da-9613-9e5a7da51740.png)
+
