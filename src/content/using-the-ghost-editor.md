@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "유진's 블로그 오픈!"
+title: "Using the ghost editor"
 author: Ghost
 tags: ["Getting Started"]
 image: img/writing.jpg
