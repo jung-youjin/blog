@@ -1,1 +1,19 @@
+name: On Blog deployed - Create Issue Status
 
+on:
+  repository_dispatch:
+    types: [opened, deleted]
+  workflow_dispatch:
+    inputs:
+      add_labels:
+        description: deploy failed label for issue
+        required: true
+        default: deploy-failed
+
+
+jobs:
+  receive_status:
+    name: receive_status
+    runs-on: ubuntu-latest
+    steps:
+    - name: Receive deploy status from Netlify
