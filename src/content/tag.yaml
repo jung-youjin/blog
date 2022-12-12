@@ -37,3 +37,6 @@
 - id: cloud
   description: Study notes of Cloud
   image: img/computer.jpg
+- id: circuits
+  description: Study notes of electrical circuits
+  image: img/demo1.jpg
