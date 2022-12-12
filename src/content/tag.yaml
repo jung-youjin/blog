@@ -25,3 +25,6 @@
 - id: diary
   description: Personal diary to jot down my thoughts and daily life
   image: img/diary-cover.jpg
+- id: github-universe-2022
+  description: My trip to GitHub Universe 2022 at San Francisco, USA as GitHub Campus Expert
+  image: img/github-universe-2022.png
