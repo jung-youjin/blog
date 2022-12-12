@@ -31,3 +31,9 @@
 - id: embedded-systems
   description: Study notes of embedded systems
   image: img/computer.jpg
+- id: iot
+  description: Study notes of IoT (Internet of Things)
+  image: img/computer.jpg
+- id: cloud
+  description: Study notes of Cloud
+  image: img/computer.jpg
