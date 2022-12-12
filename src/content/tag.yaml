@@ -28,3 +28,6 @@
 - id: github-universe-2022
   description: My trip to GitHub Universe 2022 at San Francisco, USA as GitHub Campus Expert
   image: img/github-universe-2022.png
+- id: embedded-systems
+  description: Study notes of embedded systems
+  image: img/computer.jpg
